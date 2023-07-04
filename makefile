@@ -8,3 +8,6 @@ build: $(CFILES)
 
 test: $(CFILES)
 	$(CC) $(CFLAGS) -o test test.c $(CFILES)
+
+deploy: $(CFILES)
+	$(CC) $(CFLAGS) -o operation app.c $(CFILES)
